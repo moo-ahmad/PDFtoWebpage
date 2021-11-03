@@ -39,7 +39,7 @@ namespace PDFtoWebpage
         protected void btnconvert_Click(object sender, EventArgs e)
         {
             Debug.Write("We are in...........");
-            string file = @"~/myfile.pdf";
+            string file = @"C:\Users\mahmad\source\repos\PDFtoWebpage\PDFtoWebpage\Uploads\myfile.pdf";
             StringBuilder sb = new StringBuilder();
             using(PdfReader reader = new PdfReader(file))
             {
@@ -51,7 +51,10 @@ namespace PDFtoWebpage
                     sb.Append(text);
                 }
             }
-            Response.Write("text is "+sb.ToString());
+            //  Response.Write("text is "+sb.ToString());
+
+            converted.Controls.Add(new LiteralControl(sb.ToString()));
+
         }
     }
 }
