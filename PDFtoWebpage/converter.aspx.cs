@@ -20,7 +20,7 @@ namespace PDFtoWebpage
         {
             Debug.Write("We are in...........");
 
-            string physicalpath = Server.MapPath("~/");
+            string physicalpath = Server.MapPath("~/Uploads/");
 
             if (!Directory.Exists(physicalpath))
             {
