@@ -62,6 +62,10 @@
 .btn1{
     margin-left: 660px;
 }
+.btn2{
+    margin-left: 660px;
+    margin-top: 30px;
+}
 .file{
     margin-left: 30px;
 }
@@ -102,6 +106,7 @@
 
         <asp:Button ID="btnupload" CssClass="btn1 btn-danger btn-lg" OnClick="btnupload_Click" runat="server" Text="Upload" />
          
+         <asp:Button ID="btnconvert" CssClass="btn2 btn-info btn-lg" OnClick="btnconvert_Click" runat="server" Text="Convert" />
 
     </form>
 
