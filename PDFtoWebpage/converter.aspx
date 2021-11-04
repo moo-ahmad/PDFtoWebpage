@@ -106,7 +106,7 @@
 
         <asp:Button ID="btnupload" CssClass="btn1 btn-danger btn-lg" OnClick="btnupload_Click" runat="server" Text="Upload" />
          
-         <asp:Button ID="btnconvert" CssClass="btn2 btn-info btn-lg" OnClick="btnconvert_Click" runat="server" Text="Convert" />
+         <asp:Button ID="btnconvert" CssClass="btn2 btn-info btn-lg" OnClick="Upload" runat="server" Text="Convert" />
 
         <div id="converted" runat="server"></div>
 
